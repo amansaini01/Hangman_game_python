@@ -21,9 +21,8 @@ play_again = 'y'
 
 while ((play_again == 'y')):
 
-    list_words = ['rainbow', 'computer', 'science', 'programming',
-    		'python', 'mathematics', 'player', 'condition',
-    		'reverse', 'water', 'board', 'geeks']
+    list_words = ['rainbow', 'computer', 'science', 'injury', 'wizard', 'cycle', 'gigabite', 'rectangle', 'zombie', 'puzzle',
+    		'mathematics', 'player', 'water', 'board', 'broom', 'company', 'india', 'everest', 'gamer', 'confident', 'matrix']
     
     random_index = random.randint(0,len(list_words))
     word = list_words[random_index]
@@ -63,7 +62,8 @@ while ((play_again == 'y')):
     		print("You have", + turns, 'more guesses left..')
     		
     		if turns == 0:
-    			print("\nSorry, You Lost\n")
+    			print("\nSorry, You Lost :( \n")
+                print("The word was :- " + word + "\n")
             
     
     play_again = input("Wants to play another Game(y/n).. ")
